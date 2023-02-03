@@ -181,11 +181,11 @@ font-size: 28px;
 }
 
 .div-container-last div{
-    margin-top: 3em;
-    align-items: center;
-
-    
+    margin-top: 3em 0 0 0;
+    align-items: center;  
 }
+
+
 .div-container-last h2 {
     margin-top: 2em;
 }
@@ -313,7 +313,7 @@ font-size: 28px;
     .nav-container ion-icon{
         display: block;
         font-size: 20px;
-        padding-left: 75px;
+        padding-right: 50px;
        } 
 
     .hero-text p{
@@ -358,6 +358,12 @@ font-size: 28px;
         background-size: 100%;
         background-repeat: no-repeat;
         color: rgb(255, 255, 255);
+    }
+
+
+    .div-container-last div{
+        margin-top: 3em 0 0 0;
+        align-items: center;  
     }
 
     .menu-icon{
@@ -482,8 +488,9 @@ font-size: 28px;
         color: white;
        } 
 
-       .menu-icon{
-        margin-left: 25px;
+    #icon{
+        display: none;
+        /* margin-left: 25px; */
        }
 
        .about-section img{
@@ -512,6 +519,15 @@ font-size: 28px;
             align-items: center;
             justify-content: center;
         }
+
+        .div-container-last div{
+            margin-top: 3em 0 0 0;
+            align-items: center;  
+        }
     
-    
+        .nav-container ion-icon{
+            display: block;
+            font-size: 20px;
+            padding-right: 50px;
+           } 
 } 
