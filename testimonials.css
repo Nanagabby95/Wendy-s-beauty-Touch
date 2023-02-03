@@ -55,6 +55,19 @@ border-radius: 50%;
         display: flex;
         flex-direction: column;
         width: 100%;
+        display: flex;
+    }
+
+    .testimonial-wrapper{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .testimonial-wrapper p{
+        font-size: 16px;
     }
 
 

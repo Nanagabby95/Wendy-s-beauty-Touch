@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 249, 249);
+}
+
+
+.photo-gallery div img{
+    width: 500px;
+    height: 600px;
+}
+
+.wrapper p{
+    padding: 20px;
+    font-size: 18px;
+    color: rgb(84, 82, 82);
+}
+
+.wrapper h1{
+    font-size: 40px ;
+    font-family: 'Rubik Gemstones';
+    background: #40E0D0;
+    background: linear-gradient(to right, #220e18, #FF8C00, #0f1615); 
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+    padding: 20px;
+    margin:0
+}
+
+.last-section p{
+    font-size: 24px;
+}
+
+.trad-button{
+    background-color: #FF8C00;
+    padding: 40px 40px;
+    color: white;
+    border-color: none;
+    border: none; 
+    animation:rotate 5s linear;
+    animation-iteration-count: infinite;
+    margin: 3em;
+    border-radius: 50%;
+}
+
+@keyframes rotate{
+from {transform: rotate(0deg);}
+to {transform: rotate(360deg);}
+} 
+    
+ion-icon{
+    color: green;
+    font-size: 70px;
+    padding-top:1em ;
+}
+
+.photo-gallery{
+    display: flex;
+    flex-direction: row;
+}
+
+.photo-gallery div img{
+    width:600px;
+    margin: 2em;
+    transition: 2s;
+    transform: scale(2deg);
+}
+.wrapper h1{
+    margin-left: 400px;
+}
+
+.last-section{
+    display: flex;
+}
+
+@media screen and (max-width:768px) {
+    .wrapper div{
+        display: flex;
+        flex-direction: column;
+    }
+    .photo-gallery div img{
+        width:500px;
+        margin: 0;
+        transition: 0;
+        transform: none;
+    }
+    .wrapper h1{
+       margin:0;
+    }
+
+    .trad-button{
+        margin: .5em;
+    }
+}
+
+/* @media screen and(max-width:1440px) {
+   
+
+} */
