@@ -553,13 +553,16 @@ a.active:hover{
         display: none;
     } */
 
-    /* @media screen and(max-width:1440px) {
+    @media screen and (max-width:1440px) {
       
-     .logo{
-        margin-right: 40px;
-        font-size: 40px;
+     .about-section-img img{
         display: none;
      }
 
+     .about-section-traditional img{
+        display: none;
+     }
+    
 
-    } */
+
+    } 
