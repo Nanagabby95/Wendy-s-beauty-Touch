@@ -266,7 +266,7 @@ nav ul{
     position: fixed;
     top: 0;
     right: -220px;
-    width: 200px;
+    width: 250px;
     height: 100vh;
     padding-top:50px;
     z-index: 2;
@@ -347,6 +347,12 @@ a.active:hover{
         bottom: 50px;
         left: 120px;
        }
+
+
+
+    .about-section img{
+        width: 100%;
+    }
 
 
 /* @media screen and(max-width:1100px) {
@@ -468,7 +474,7 @@ a.active:hover{
 
 
     .div-container-last div{
-        margin-top: 3em 0 0 0;
+        margin-top: 1em 0 0 0;
         align-items: center;  
     }
 
