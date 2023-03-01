@@ -12,6 +12,7 @@ body{
 .photo-gallery div img{
     width: 500px;
     height: 600px;
+    object-fit: cover;
 }
 
 .wrapper p{
@@ -70,6 +71,7 @@ ion-icon{
     margin: 2em;
     transition: 2s;
     transform: scale(2deg);
+    object-fit: cover;
 }
 .wrapper h1{
     margin-left: 400px;
@@ -89,6 +91,7 @@ ion-icon{
         margin: 0;
         transition: 0;
         transform: none;
+        object-fit: cover;
     }
     .wrapper h1{
        margin:0;

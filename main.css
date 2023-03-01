@@ -1,111 +1,138 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+padding: 0;
+margin: 0;
+box-sizing: border-box;
 }
 html{
 scroll-behavior: smooth;
 }
 
 
-
-.nav-container{
+nav{
     display: flex;
     align-items: center;
-   justify-content: space-between;
-   padding: 20px 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-/* .nav-container ion-icon{
-    font-size: 25px;
-    cursor: pointer;
-    display: none;
-
-} */
-
-
-nav li{
-    list-style: none;
-}
-
-
-.menu-icon{
-    margin-left: 25px;
-}
-
-
-/* nav{
+nav ul{
     display: flex;
-} */
+    list-style: none;
+    text-decoration: none;
+    
+    
+
+} 
 
 
+nav ul li a{ 
+    justify-content: center;
+    align-items: center; 
+    color: gray;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline;
+    
+}
+
+ul{
+    gap: 5.5em;
+    margin-left: 600px;
+}
+
+
+.nav-container{
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+#closemenu{
+    display: none;
+}
+
+#icon{
+    display: none;
+}
+
+    
 .logo{
+    position: relative;
+    top: 1em;
+    margin: 0 .5em;
+    display: inline;
+    font-size: 40px;
     font-family: 'Rubik Gemstones';
-    font-size:medium;
-    font-weight: large;
-
 }
 
-.hero-text{
-    padding: 15px;
-}
 
-.hero-text h5{
-font-size: 16px;
-width: 150px;
-height: 20px;
+.hero-text h6 {
+display: inline-block;
+align-items: center;
+font-size: 25px;
+padding-bottom: 1em;
 background: #40E0D0;
 background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0); 
 -webkit-background-clip: text;
 -moz-background-clip: text;
 -webkit-text-fill-color: transparent;
 -moz-text-fill-color:transparent;
-}
-
-.hero-text h5, h6 {
-    display: inline-block;
-    margin: 0.5rem;
-    animation: fadeInLeft; 
-    animation-duration: 2s; 
-}
-.hero-text h6{
-    font-size: 23px;
+animation: fadeInLeft; 
+animation-duration: 2s; 
 }
 
 
+.hero-text h5{
+display: none;
+}
+
+.hero-text h4{
+font-size: 30px;
+}
+
+.hero-text{
+margin-bottom: 12em;
+}
 
 .hero-text p{
-    font-size: 14px;
-}
-
-.hero-text  ion-icon{
-    color: rgb(255, 115, 0);
-}
-
-.hero-section img{
-margin: 4em 0.5rem;
-width: 100%;
-/* height: 400px; */
+font-size: 18px;
 }
 
 .hero-section{
+gap: 4em;
 display: flex;
 flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+
+.hero-section img{
+width:600px;
+height: 500px;
+object-fit: cover;
+}
+
+.div-hero-img{
+float:right;
+margin-top: 7em;
 }
 
 .about-section img{
- width: 100%;
- /*height: 400px; */
+width: 600px;
+height: 600px;
+object-fit: cover;
 border-top-left-radius:40px;
 border-bottom-right-radius: 40px;
-padding: 10px;
-margin: .2em;
+margin: 1em 2em;
 }
 
 .about-section{
 background-color: rgb(248, 246, 246);
-padding: 10px;
 font-size: 14px;
+}
+
+.about-section p, h3{
+text-align: center;
 }
 
 .about-section  h3{
@@ -113,7 +140,7 @@ display:block;
 margin: 2rem .5rem;
 animation: fadeInLeft; 
 animation-duration: 2s;  
-font-size: 23px;
+font-size: 33px;
 font-family: 'Rubik Gemstones';
 background: #77635b;
 background: linear-gradient(to right, #f5057d, hsl(60, 5%, 4%), #0af0ce); 
@@ -123,22 +150,20 @@ background: linear-gradient(to right, #f5057d, hsl(60, 5%, 4%), #0af0ce);
 -moz-text-fill-color:transparent;
 }
 
-
 .about-section  p{
-    display: block;
-    margin: 0.5rem;
-    }
+display: block;
+font-size: 18px;
+}
 
-.about-section-img{
-    margin-top: 1em;
+.about-section-traditional{
+margin: 1em 2em;
 }
-.div-container-last{
-    background-image: url(../images/wendy\ 8.jpg);
-    filter: brightness(40%);
-    background-size: 100vh;
-    background-repeat: no-repeat;
-    color: rgb(255, 255, 255);
+.about-section-traditional p, h4{
+text-align: center;
+margin: 1em 2em;
+
 }
+
 .about-section-traditional h4{
 font-size: 20px ;
 font-family: 'Rubik Gemstones';
@@ -148,17 +173,43 @@ background: linear-gradient(to right, #220e18, #FF8C00, #0f1615);
 -moz-background-clip: text;
 -webkit-text-fill-color: transparent;
 -moz-text-fill-color:transparent;
+}        
+
+.trad-img img{
+margin: 0 3em;
+object-fit: cover;
+height: 700px;
+width: 550px;
+}
+
+.trad-img .width{
+    width:100%;
+    object-fit:cover;
+}
+
+.div-container-last{
+    background-image: url(../images/wendy\ 8.jpg);
+    filter: brightness(40%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+}
+
+
+.div-container-last div{
+    margin-top: 1em 0 0 0;
+    align-items: center;  
 }
 
 .contact-section{
     justify-content: center;
     align-items: center;
-    background-color: rgb(49, 48, 48);
+    /* background-color: rgb(49, 48, 48); */
     padding: 10px;
 }
 
 .contact-section h3{
-margin: 1em;
+display: inline-block;
 color: #FF8C00;
 font-size: 28px;
 }
@@ -181,399 +232,232 @@ font-size: 28px;
     
 }
 
-.div-container-last div{
-    margin-top: 3em 0 0 0;
-    align-items: center;  
-}
-
-
-.div-container-last h2 {
-    margin-top: 2em;
-}
-.container-address ion-icon{
-    font-size: 100px;
-    color:  #FF8C00;
-}
-
-.div-section-address{
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-}
-
 .div-container-last  button{
-    padding: 8px 40px;
-    background-color:  #FF8C00;
-    border: none;
-    margin-top: 2em;
+padding: 8px 40px;
+background-color:  #FF8C00;
+border: none;
+margin-top: 2em;
 
 }
 
 .div-container-last h2{
-    padding: 6px;
-    color: #FF8C00;
+padding: 6px;
+color: #FF8C00;
 }
 .div-container-last p{
- color: #FF8C00;
- font-weight: bold;
- margin-bottom: 3em;
+color: #FF8C00;
+font-weight: bold;
+/* margin-bottom: 3em; */
 }
 
 .testimonials h1{
-    font-size: 23px ;
-    font-family: 'Rubik Gemstones';
-    background: #40E0D0;
-    background: linear-gradient(to right, #220e18, #FF8C00, #0f1615); 
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color:transparent;
-    margin-top: 2em;
+font-size: 40px ;
+font-family: 'Rubik Gemstones';
+background: #40E0D0;
+background: linear-gradient(to right, #f5f1f3, #FF8C00, #fafbfb); 
+-webkit-background-clip: text;
+-moz-background-clip: text;
+-webkit-text-fill-color: transparent;
+-moz-text-fill-color:transparent;
+margin:0;
 }
 .testimonials  button{
-    background-color: #FF8C00;
-    padding: 30px 40px;
-    color: white;
-    border-color: none;
-    border: none;
+display: inline-block;
+background-color: #FF8C00;
+padding: 30px 10px;
+color: white;
+border-color: none;
+border: none;
 }
 
 
 .trad-button{
-        background-color: #FF8C00;
-        padding: 30px 40px;
-        color: white;
-        border-color: none;
-        border: none; 
-        animation:FadeIn 5s linear;
-        animation-iteration-count: infinite;
-        margin: 2em;
-        border-radius: 50%;
-    }
-    
-    @keyframes rotate{
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
-    } 
-
-/* FROM HERE */
-
-
-
-
-nav ul{
-    background-color:#FF0080;
-    position: fixed;
-    top: 0;
-    right: -220px;
-    width: 250px;
-    height: 100vh;
-    padding-top:50px;
-    z-index: 2;
-    transition: right 0.5s;
+    text-align: center;
+    background-color: #FF8C00;
+    padding: 30px 40px;
+    color: white;
+    border-color: none;
+    border: none; 
+    animation:FadeIn 5s linear;
+    animation-iteration-count: infinite;
+    margin-bottom: 2em;
+    border-radius: 50%;
 }
 
-nav ul a{
+.hero-text  ion-icon{
+    color: rgb(255, 115, 0);
+}
+
+.contact-section-button{
+    padding: 10px 50px;
+    background-color: #ff00aa;
     font-size: 14px;
-    margin-top: 1em;
+    margin-top: 6em;
+    border: none;
     color: white;
 }
 
-nv ul li a{
+
+.contact-section ion-icon{
+    font-size: 25px;
+    color: #FF8C00;
     justify-content: center;
-    align-items: center; 
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    display: inline;
-}
+    align-items: center;
 
-a.active:hover{
-    background-color: black;
-    border: transparent;
-    padding: 4px 10px;
-}
-.nav-container ion-icon{
-    display: block;
-    position: relative;
-    /* top: 2px; */
-    left: 25px;
-    cursor: pointer;
-    color: black;
-   } 
-
-   .about-section img{
-    /* width: 400px; */
-    /* height: 50%;  */
-    border-top-left-radius:40px;
-    border-bottom-right-radius: 40px;
-    padding: 10px;
-    margin:.2em;
-    }
-
-    .hero-section img{
-        width: 100%;
-     }
     
-     .div-container-last{
-        background-image: url(../images/wendy\ 8.jpg);
-        filter: brightness(40%);
-        background-size: 100%;
-        background-repeat: no-repeat;
-        color: rgb(255, 255, 255);
-    }
+}
+
+.trad-img div{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-section img{
+    width: 100%;
+ }
+
+ .div-container-last{
+    background-image: url(../images/wendy\ 8.jpg);
+    filter: brightness(40%);
+    background-size: 100vh;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    height: 100vh;
+    /* width: 100%; */
+    object-fit: cover;
+}
+
+.testimonials{
+    padding: 5px;
+}
+
+.div-container-last div{
+    padding-left: 3px;
+}
+
+.contact-section{
+    margin: 0;
+}
 
 
-    .testimonials{
-        align-items: center;
-        justify-content: center;
-    }
+/* CSS FOR SMALL SCREEN */
 
-    .div-container-last div{
-        margin-top: 3em 0 0 0;
-        align-items: center;  
-    }
-
-    .nav-container ion-icon{
+@media only screen and (max-width: 600px){
+    #closemenu{
         display: block;
-        font-size: 20px;
-        padding-right: 90PX;
-       }  
-
-       #closemenu{
+        font-size: 25px;
         color: white;
+    }
+    #icon{
+        display: block;
+        font-size: 25px;
         position: absolute;
-        bottom: 50px;
-        left: 120px;
-       }
-
-
-
-    .about-section img{
-        width: 100%;
+        left: 400px;
+        top: 45px;
     }
-
-
-/* @media screen and(max-width:1100px) {
-    nav li{
-        display: inline-block;
-    }
-    nav a{
-        color: white;
-        font-size: 18px;
-        text-transform: uppercase;
-        border: 1px solid transparent;
-        padding: 7px 10px;
-        border-radius: 3px;
-    
-    }
-    a.active,a:hover{
-        border: 1px solid white;
-        transition: .5s;
-    }
-    
-} */
-
-@media screen and (max-width:768px) {
 
     nav ul{
-        background-color:#FF0080;
-        position: fixed;
-        top: 0;
-        right: -300px;
-        width: 300px;
-        height: 100vh;
-        padding-top:50px;
-        z-index: 2;
-        transition: right 0.5s;
-        font-size: 15px;
+       background: #ff00aa;
+       position: fixed;
+       top: 0;
+       right: -200px;
+       width: 200px;
+       text-align: center;
+       height: 100vh;
+       padding-top: 50px;
+       z-index: 2;
+       transition: right 0.5s;
+       display: block;
+    }
+    
+    ul{
+        display: block;
+        gap: .1em;
+
+
     }
 
-    nav ul li{
-        margin: 20px;
-        
+ 
+    
+    nav ul a{
+        display: block;
+        font-size: 14px;
+        margin-top: 1em;
+        color: white;
     }
 
+    nav li{
+        display: block;
+    }
+    
     nav ul li a{
         justify-content: center;
         align-items: center; 
-        padding: 10px 20px;
+        padding: 14px;
         color: white;
         text-decoration: none;
-        font-size: 15px;
-        display: inline;
-    }
-
-
-    nav li a{
-        text-decoration: none;
-    }
-
-    nav ul ion-icon{
-        position: absolute;
-        top: 25px;
-        right: 12px;
-        cursor: pointer;
-        color: white;
-    }
-    
-    a.active:hover{
-        background-color: black;
-    }
-
-    .nav-container ion-icon{
-        display: block;
-        font-size: 20px;
-        padding-right: 90px;
-       } 
-
-    .hero-text p{
         font-size: 18px;
+        display: block;
+    }
+    
+    a:hover{
+        color: rgb(223, 14, 14);
+        border: transparent;
+    }
+    nav ion-icon{
+        position:absolute;
+        top: 25px;
+        left: 150px;
     }
 
-    .hero-section h4{
-        font-size: 30px;
-    }
-
-     .hero-section h5{
-        font-size: 16px;
-    }
-
-    .hero-section div img{
-        margin: 4em 0;
-        width: 100vw;
-        height: 400px;
-        }
-
-    .about-section p{
-        font-size: 20px;
-    }
-
-    .about-section img{
-        width: 500px;
-        height: 500px;
-    }
-
-    .logo{
-        font-size: 30px;
-       
-     }
-
-     .hero-section img{
+  
+    .div-hero-img img{
+        object-fit: cover;
         width: 100%;
-     }
-    
-     .div-container-last{
-        background-image: url(../images/wendy\ 8.jpg);
-        filter: brightness(40%);
-        background-size: 100%;
-        background-repeat: no-repeat;
-        color: rgb(255, 255, 255);
-    }
-
-
-    .div-container-last div{
-        margin-top: 1em 0 0 0;
-        align-items: center;  
-    }
-
-    .menu-icon{
-        margin-left: 35px;
-       }
-
-
-
-}
- 
-    /* nav{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    
-    nav ul{
-        display: flex;
-        list-style: none;
-        text-decoration: none;
-        
-      
-    
-    } 
-   
-    
-    nav ul li a{ 
-        justify-content: center;
-        align-items: center; 
-        padding: 10px 20px;
-        color: gray;
-        text-decoration: none;
-        font-size: 20px;
-        display: inline;
+        margin-top: -9em;
+        padding: 10px;
         
     }
-    
-    
-    .nav-container{
-        justify-content: center;
-        align-items: center;
-    
+
+    .div-hero-img{
+        margin: 0;
+        font-size: 14px;
     }
 
-     
-    .logo{
-       margin-right: 40px;
-       font-size: 40px;
-    }
-    .hero-text h5, h4 {
-        display: inline-block;
-        margin: 2rem;
-        font-size: 30px;
+    .hero-section p{
+        font-size: 17px;
     }
 
-    .hero-text h4{
+    .hero-section h6{
         font-size: 20px;
+    }
+
+
+    #home{
+       display: flex;
+       flex-direction: column;
+       padding: 10px;
+        
     }
 
     .hero-text{
-        width: 100%;
+       margin-top: 4em;
     }
 
-    .hero-section{
-      display: flex;
-      flex-direction: row;
+    .contact-section-button{
+       margin-left: 2em;
     }
-
-    .hero-section img{
-        width: 500px
-    } */
-
-    /* .nav-container ion-icon{
-        display: none;
-    } */
-
-    @media screen and (min-width:1440px) {
-      
-     .about-section-img img{
-        width: 400px;
-     } 
-
-     .about-section-traditional img{
-        display: none;
-     }
-
-     .about-section img{
-         width: 400px;
-        /* height: 50%;  */
-        border-top-left-radius:40px;
-        border-bottom-right-radius: 40px;
-        padding: 10px;
-        margin:.2em;
-        }
     
-
-     .hero-section img{
+    .about-section-img img{
         width: 100%;
-     }
-    } 
+        object-fit: cover;
+        
+}
+
+.trad-img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+}
