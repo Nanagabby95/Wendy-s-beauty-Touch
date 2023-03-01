@@ -298,7 +298,7 @@ a.active:hover{
     display: block;
     position: relative;
     /* top: 2px; */
-    left: 25px;
+    left: 15px;
     cursor: pointer;
     color: black;
    } 

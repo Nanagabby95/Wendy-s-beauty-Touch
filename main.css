@@ -99,7 +99,7 @@ font-size: 18px;
 }
 
 .hero-section{
-gap: 4em;
+gap: 5em;
 display: flex;
 flex-direction: row;
 align-items: center;
@@ -165,7 +165,7 @@ margin: 1em 2em;
 }
 
 .about-section-traditional h4{
-font-size: 20px ;
+font-size: 30px ;
 font-family: 'Rubik Gemstones';
 background: #40E0D0;
 background: linear-gradient(to right, #220e18, #FF8C00, #0f1615); 
@@ -190,7 +190,9 @@ width: 550px;
 .div-container-last{
     background-image: url(../images/wendy\ 8.jpg);
     filter: brightness(40%);
-    background-size: 100%;
+    background-size: cover;
+    /* width: 100vw; */
+    object-fit: cover;
     background-repeat: no-repeat;
     color: rgb(255, 255, 255);
 }
@@ -316,6 +318,7 @@ border: none;
 .hero-section img{
     width: 100%;
  }
+ 
 
  .div-container-last{
     background-image: url(../images/wendy\ 8.jpg);
@@ -353,7 +356,7 @@ border: none;
         display: block;
         font-size: 25px;
         position: absolute;
-        left: 400px;
+        left: 350px;
         top: 45px;
     }
 
@@ -460,4 +463,18 @@ border: none;
     object-fit: cover;
 }
 
+}
+
+@media only screen and (max-width: 1440px){
+
+    .div-container-last{
+        background-image: url(../images/wendy\ 8.jpg);
+        filter: brightness(40%);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: rgb(255, 255, 255);
+        height: 100vh;
+        /* width: 100%; */
+        object-fit: cover;
+    }
 }
