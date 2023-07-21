@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body{
@@ -10,8 +11,8 @@ body{
 
 
 .photo-gallery div img{
-    width: 500px;
-    height: 600px;
+    width: 100%;
+    /* height: 600px; */
     object-fit: cover;
 }
 
@@ -99,6 +100,9 @@ ion-icon{
 
     .trad-button{
         margin: .5em;
+    }
+    img{
+        width: 100%;
     }
 }
 
