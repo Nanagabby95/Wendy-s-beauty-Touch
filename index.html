@@ -9,59 +9,82 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="testimonial.html">
     <link rel="stylesheet" href="traditionals.html">
 </head>
 <body>
     <header>
-    <div class="nav-container">
-        <label class="logo">WBT</label>
-        <nav>
-            <ul id="sidemenu">
-                <li><a class="active" href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="testimonial.html">Testimonials</a></li>
-                <ion-icon id="closemenu" name="close" onclick="closemenu()"></ion-icon>
-            </ul>
-            <ion-icon class="menu-icon" id="icon" name="menu" onclick="openmenu()"></ion-icon>
-        </nav>
-    </div>
-        <div class="hero-section" id="home">
-            <div class="hero-text">
-            <h6>Welcome to Wendy's Beauty Touch<ion-icon name="flame"></ion-icon></h6><br>
-            <h5>WHAT DO WE DO?</h5>
-                <p>Craving a glowing look for that special event? You want to look catchy and sweet for <br> a dinner night? Wedding? Birthday, and what have you?
-                We provide a professional, <br>affordable, enjoyable & reliable service to all our clients.  Our aim is to save <br>you time and money!
-                 Welcome to the right place</p>
-                <a href="tel:08164737556"><button class="contact-section-button">CONTACT US</button></a>
-                 </div>
-            <div class="div-hero-img">
-                 <img src="/images/wendy 0.jpg" alt="makeup-photo">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
+            <div class="container-fluid">
+              <a class="navbar-brand logo" href="#">WBT</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active ps-4" aria-current="page" href="#home">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ps-4" href="#services">SERVICES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ps-4" href="#about">ABOUT US</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ps-4" href="testimonial.html">TESTIMONIALS</a>
+                  </li>
+                </ul>
+                  <a href="https://wa.me/+2348164737556?=I'm%20interested%20in%20your%20service"><button class="btn nav-button" type="submit" >GET STARTED</button></a>
+                </form>
+              </div>
             </div>
-        </div>
+          </nav>
+    
+    </div>
 </header>
+<div class="hero-section container-fluid pt-4" id="home">
+    <div class="row pt-4 container-fluid">
+      <div class="col-lg-6 col-md-12 col-sm-12 hero-text pt-4">
+        <h6>Welcome to Wendy's Beauty Touch<ion-icon name="flame"></ion-icon></h6>
+        <br>
+        <h5>WHAT DO WE DO?</h5>
+        <p>
+          Craving a glowing look for that special event? You want to look catchy and
+          sweet for a dinner night? Wedding? Birthday, and what have you? We provide a
+          professional, affordable, enjoyable & reliable service to all our clients.
+          Our aim is to save you time and money! Welcome to the right place
+        </p>
+        <a href="tel:08164737556"><button class="contact-section-button">CONTACT US</button></a>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12 div-hero-img pt-4">
+        <img src="/images/wendy 0.jpg" alt="makeup-photo" class="img-fluid">
+      </div>
+    </div>
+  </div>
+  
+  
 
 
-        <div class="about-section" id="about">
+        <div class="about-section  container-fliud" id="about">
             <div>
             <h3>About Section</h3>
             <p>We have standard make-up studio for any kind of event, make-up compounds to tint, conceal and alter <br> your look for super beautification.
             Our experts are talented in <br> transforming and improving people's face.</p>
-            <div class="about-section-img" >
-            <img src="/images/wendy 1.jpg" alt="woman">
-            <img src="/images/wendy 7.jpg" alt="woman">
-            <img src="/images/wendy 5.jpg" alt="woman">
-            <img src="/images/wendy 8.jpg" alt="woman">
+            <div class="about-section-img md-col-8 sm-col-6">
+            <img src="/images/wendy 1.jpg" alt="woman" class="img-fliud"> 
+            <img src="/images/wendy 7.jpg" alt="woman" class="img-fliud">
+            <img src="/images/wendy 5.jpg" alt="woman" class="img-fliud">
+            <img src="/images/wendy 8.jpg" alt="woman" class="img-fliud">
             </div>
             <div class="about-section-traditional" id="services">
                 <h4>Traditional Events?</h4>
                 <p>We don't want you to worry about your customes, <br> accessories like gele, beads and makeover for <br> your traditional events. Wendy's Beauty Touch has got you covered.</p>
                 <div class="trad-img">
-                    <img src="/images/wendy trad.jpg" alt="woman">
-                    <img src="/images/wendy-trad 2.jpg" alt="woman">
-                    <img src="/images/wendy 4.jpg" alt="woman" class="width">
+                    <img src="/images/wendy trad.jpg" alt="woman" class="img-fliud">
+                    <img src="/images/wendy-trad 2.jpg" alt="woman" class="img-fliud">
+                    <img src="/images/wendy 4.jpg" alt="woman" class="width img-fliud">
                     <div>
                     <p>There are more to see. Click on the button below to view more of our traditional make-up samples and costumes</p>
                     <a href="/traditionals.html"><button class="trad-button">See more</button></a>
@@ -69,7 +92,6 @@
                 </div>
             </div>
             </div>
-
         </div>
         <div class="div-container-last" id="services">
             <div class="testimonials">
@@ -111,6 +133,7 @@
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;1,600&family=Epilogue&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,700&family=IBM+Plex+Sans&family=Inter:wght@400;700;800;900&family=Lato:wght@300&family=Pacifico&family=Poppins&family=Rubik+Gemstones&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

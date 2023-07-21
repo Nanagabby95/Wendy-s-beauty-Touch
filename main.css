@@ -2,6 +2,7 @@
 padding: 0;
 margin: 0;
 box-sizing: border-box;
+overflow-x: hidden;
 }
 html{
 scroll-behavior: smooth;
@@ -28,16 +29,24 @@ nav ul{
 nav ul li a{ 
     justify-content: center;
     align-items: center; 
-    color: gray;
+    color: #ff00aa !important;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 24px;
     display: inline;
+    font-weight: bold;
     
 }
 
-ul{
-    gap: 5.5em;
-    margin-left: 600px;
+.nav-button{
+    background-color: transparent !important;
+    border-color: #ff00aa !important;
+    color: #ff00aa !important;   
+}
+.nav-button:hover{
+    background-color:#ff00aa !important;
+    color: white !important; 
+    cursor: pointer;
+    transition: 1s ease-in;  
 }
 
 
@@ -57,11 +66,11 @@ ul{
 
     
 .logo{
-    position: relative;
-    top: 1em;
-    margin: 0 .5em;
-    display: inline;
-    font-size: 40px;
+    /* position: relative; */
+    /* top: 1em; */
+    /* margin: 0 .5em; */
+    /* display: inline; */
+    font-size: 40px !important;
     font-family: 'Rubik Gemstones';
 }
 
@@ -99,11 +108,11 @@ font-size: 18px;
 }
 
 .hero-section{
-gap: 5em;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
+/* gap: 5em; */
+/* display: flex; */
+/* flex-direction: row; */
+/* align-items: center; */
+/* justify-content: center; */
 }
 
 .hero-section img{
@@ -190,8 +199,8 @@ width: 550px;
 .div-container-last{
     background-image: url(../images/wendy\ 8.jpg);
     filter: brightness(40%);
-    background-size: cover;
-    /* width: 100vw; */
+    background-size: 100%;
+    width: 100% !important;
     object-fit: cover;
     background-repeat: no-repeat;
     color: rgb(255, 255, 255);
@@ -346,23 +355,25 @@ border: none;
 
 /* CSS FOR SMALL SCREEN */
 
-@media only screen and (max-width: 600px){
-    #closemenu{
+@media only screen and (max-width: 820px){
+    /* #closemenu{
         display: block;
         font-size: 25px;
         color: white;
-    }
-    #icon{
+        position: absolute;
+        left: 30px;
+    } */
+    /* #icon{
         display: block;
         font-size: 25px;
         position: absolute;
-        left: 350px;
+        left: 300px;
         top: 45px;
-    }
+    } */
 
     nav ul{
-       background: #ff00aa;
-       position: fixed;
+       /* background: #ff00aa; */
+       /* position: fixed;
        top: 0;
        right: -200px;
        width: 200px;
@@ -371,23 +382,19 @@ border: none;
        padding-top: 50px;
        z-index: 2;
        transition: right 0.5s;
-       display: block;
+       display: block; */
+       /* color: black !important; */
     }
     
     ul{
-        display: block;
-        gap: .1em;
-
-
+        /* display: block; */
+        /* gap: .1em; */
     }
-
- 
-    
     nav ul a{
         display: block;
         font-size: 14px;
         margin-top: 1em;
-        color: white;
+        color: rgb(22, 1, 1) !important;
     }
 
     nav li{
@@ -395,25 +402,30 @@ border: none;
     }
     
     nav ul li a{
-        justify-content: center;
+        /* justify-content: center;
         align-items: center; 
         padding: 14px;
         color: white;
         text-decoration: none;
         font-size: 18px;
-        display: block;
+        display: block; */
     }
-    
+/*     
     a:hover{
         color: rgb(223, 14, 14);
         border: transparent;
-    }
-    nav ion-icon{
+    } */
+    /* nav ion-icon{
         position:absolute;
         top: 25px;
         left: 150px;
+    } */
+    .about-section-traditional h4{
+        font-size: 20px !important;
     }
-
+    .about-section  h3{
+        font-size: 20px !important;
+    }
   
     .div-hero-img img{
         object-fit: cover;
@@ -454,13 +466,16 @@ border: none;
     
     .about-section-img img{
         width: 100%;
-        object-fit: cover;
-        
+        /* object-fit: cover;         */
+}
+    .trad-img img{
+        width: 100%;
+        /* object-fit: cover;         */
 }
 
 .trad-img img{
     width: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 }
@@ -473,8 +488,17 @@ border: none;
         background-size: cover;
         background-repeat: no-repeat;
         color: rgb(255, 255, 255);
-        height: 100vh;
+        height: 100% !important;
         /* width: 100%; */
         object-fit: cover;
     }
+   
+   
 }
+
+
+/* @media only screen and (min-width: 1440px){
+    nav ul li a{
+        color: black !important;
+    }
+} */
